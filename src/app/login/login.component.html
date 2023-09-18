@@ -1,0 +1,34 @@
+<div class="login-container">
+  <img class="film" src="assets/images/film.png" alt="" />
+  <div class="logo">Rotten Potatoes</div>
+  <div class="desc">
+    In this video, I present a comprehensive tutorial on building a complete
+    Angular application that encompasses all the fundamental concepts. Join us
+    as we walk you through the development process, explaining key Angular
+    concepts along the way.
+  </div>
+  <div class="login-form">
+    <div class="form-group">
+      <label for="uname">Username</label>
+      <input
+        type="text"
+        name="uname"
+        class="form-control"
+        [(ngModel)]="username"
+      />
+    </div>
+    <div class="form-group">
+      <label for="pword">Password</label>
+      <input
+        type="password"
+        name="pword"
+        class="form-control"
+        [(ngModel)]="password"
+      />
+    </div>
+    <div class="btn-container">
+      <div class="error">{{ errorMsg }}</div>
+      <button class="btn btn-dark" (click)="login()">Login</button>
+    </div>
+  </div>
+</div>
